@@ -270,8 +270,8 @@ section blockquote {
   transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
-  background-color: #555;
+.cta-text-button:hover {
+  color: #ffc107;
 }
 
 /* Destaques */
