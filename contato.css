@@ -1,0 +1,141 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7; /* cor de fundo sugerida */
+  color: #333;
+  line-height: 1.6;
+  padding-top: 60px; /* Para espaçar o conteúdo do header fixo */
+}
+
+[id] {
+  scroll-margin-top: 80px; /* Ajuste o valor para a altura do header */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+header nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+  color: #ffc107;
+}
+
+/* Seções */
+section {
+  padding: 20px;
+  margin-top: 40px; /* Espaço para o cabeçalho fixo */
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  width: 100%;
+  text-align: center;
+}
+
+.contato h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px; /* Garantindo espaçamento interno uniforme */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px; /* Ajustando espaçamento interno */
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Garante que padding seja incluído na largura */
+}
+
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.localizacao h2 {
+  text-align: center;
+  color: #333;
+  margin: 30px 0 10px;
+}
+
+.localizacao iframe {
+  border: none;
+  border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
