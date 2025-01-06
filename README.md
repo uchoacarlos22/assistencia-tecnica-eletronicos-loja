@@ -65,7 +65,7 @@ O website estará disponível para visualização localmente no seu navegador.
 
 Este site está disponível para visualização pública via GitHub Pages:
 
-[**Visite o site**](https://uchoacarlos22.github.io/loja-assistencia-tecnica/)
+[**Visite o site**](https://uchoacarlos22.github.io/assistencia-tecnica-eletronicos-loja/)
 
 ## Licença
 
