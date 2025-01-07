@@ -1,96 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça nossos serviços de assistência técnica e os produtos de alta qualidade disponíveis na nossa loja.">
-  <title>Serviços e Produtos</title>
-  <link rel="stylesheet" href="servicos.css">
-</head>
-<body>
-  <!-- Cabeçalho -->
-  <header>
-    <nav>
-      <!-- Ícone de menu hambúrguer -->
-      <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
-      <ul id="navbar" class="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="servicos.html">Serviços e Produtos</a></li>
-        <li><a href="contato.html">Contato</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conheça nossos serviços de assistência técnica e os produtos de alta qualidade disponíveis na nossa loja."
+    />
+    <title>Serviços e Produtos</title>
+    <link rel="stylesheet" href="servicos.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <nav>
+        <!-- Ícone de menu hambúrguer -->
+        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+        <ul id="navbar" class="navbar">
+          <li><a href="index.html" class="menu-link">Home</a></li>
+          <li><a href="sobre.html" class="menu-link">Sobre</a></li>
+          <li>
+            <a href="servicos.html" class="menu-link">Serviços e Produtos</a>
+          </li>
+          <li><a href="contato.html" class="menu-link">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="servicos">
+      <div class="logoWrapper">
+        <img
+          src="images/logo.png"
+          alt="Logo da empresa"
+          loading="lazy"
+          class="logo"
+        />
+        <h1 class="title">Tech Store</h1>
+      </div>
+    </section>
+
+    <!-- Seção Nossos Serviços -->
+    <section id="topo" class="servicos">
+      <h1 class="titleSize">Nossos Serviços</h1>
+      <div class="cards">
+        <div class="card">
+          <h2>Assistência Técnica</h2>
+          <p>
+            Conserto e manutenção de eletrônicos com garantia e qualidade
+            comprovada.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Suporte Técnico</h2>
+          <p>
+            Atendimento especializado para resolver problemas técnicos e
+            configurações.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Instalação</h2>
+          <p>
+            Serviço completo de instalação e configuração de equipamentos
+            eletrônicos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Produtos Disponíveis -->
+    <section class="produtos">
+      <h1 class="titleSize">Produtos Disponíveis</h1>
+      <div class="cards">
+        <div class="card">
+          <h2>Smartphones</h2>
+          <p>
+            Modelos atualizados das principais marcas, com garantia e suporte
+            local.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Acessórios</h2>
+          <p>
+            Carregadores, fones de ouvido, capas e muito mais para complementar
+            seus dispositivos.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Notebooks</h2>
+          <p>
+            Venda de notebooks novos e seminovos com configuração avançada e
+            suporte técnico.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Diferenciais -->
+    <section class="diferenciais">
+      <h1 class="titleSize">Nossos Diferenciais</h1>
+      <ul>
+        <li>Equipe altamente qualificada.</li>
+        <li>Atendimento rápido e personalizado.</li>
+        <li>Garantia de qualidade em todos os serviços e produtos.</li>
       </ul>
-    </nav>
-  </header>
+    </section>
 
-  <section>
-    <div class="logoWrapper">
-      <img
-        src="images/logo.png"
-        alt="Logo da empresa"
-        loading="lazy"
-        class="logo"
-      />
-      <h1 class="title">Tech Store</h1>
-    </div>
-  </section>
+    <!-- Rodapé -->
+    <footer>
+      <p>
+        &copy; 2025 Loja de Assistência Técnica. Todos os direitos reservados.
+      </p>
+      <a href="#topo" id="voltar-topo">Voltar ao topo</a>
+    </footer>
 
-  <!-- Seção Nossos Serviços -->
-  <section id="topo" class="servicos">
-    <h1 class="titleSize">Nossos Serviços</h1>
-    <div class="cards">
-      <div class="card">
-        <h2>Assistência Técnica</h2>
-        <p>Conserto e manutenção de eletrônicos com garantia e qualidade comprovada.</p>
-      </div>
-      <div class="card">
-        <h2>Suporte Técnico</h2>
-        <p>Atendimento especializado para resolver problemas técnicos e configurações.</p>
-      </div>
-      <div class="card">
-        <h2>Instalação</h2>
-        <p>Serviço completo de instalação e configuração de equipamentos eletrônicos.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção Produtos Disponíveis -->
-  <section class="produtos">
-    <h1 class="titleSize">Produtos Disponíveis</h1>
-    <div class="cards">
-      <div class="card">
-        <h2>Smartphones</h2>
-        <p>Modelos atualizados das principais marcas, com garantia e suporte local.</p>
-      </div>
-      <div class="card">
-        <h2>Acessórios</h2>
-        <p>Carregadores, fones de ouvido, capas e muito mais para complementar seus dispositivos.</p>
-      </div>
-      <div class="card">
-        <h2>Notebooks</h2>
-        <p>Venda de notebooks novos e seminovos com configuração avançada e suporte técnico.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção Diferenciais -->
-  <section class="diferenciais">
-    <h1 class="titleSize">Nossos Diferenciais</h1>
-    <ul>
-      <li>Equipe altamente qualificada.</li>
-      <li>Atendimento rápido e personalizado.</li>
-      <li>Garantia de qualidade em todos os serviços e produtos.</li>
-    </ul>
-  </section>
-
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; 2025 Loja de Assistência Técnica. Todos os direitos reservados.</p>
-    <a href="#topo" id="voltar-topo">Voltar ao topo</a>
-  </footer>
-
-   <!-- Scripts JS -->
-   <script src="scripts.js"></script>
-   <script src="menu.js"></script>
-   <script src="carousel.js"></script>
-</body>
+    <!-- Scripts JS -->
+    <script src="scripts.js"></script>
+    <script src="menu.js"></script>
+    <script src="carousel.js"></script>
+    <script src="links.js"></script>
+  </body>
 </html>
