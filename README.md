@@ -29,6 +29,28 @@ O site oferece as seguintes funcionalidades:
 - **Barra de Navegação:** Facilitando a navegação entre as páginas do site.
 - **Rodapé:** Com informações de direitos autorais e link para voltar ao topo da página.
 
+## Imagens do Site
+
+### Página Inicial (Desktop)
+![Página Inicial Desktop](images/home.png)  
+*Visualização da página inicial em dispositivos desktop.*
+
+### Página Inicial (Mobile)
+![Página Inicial Mobile](images/homeMobile.png)  
+*Visualização da página inicial em dispositivos móveis.*
+
+### Página de Serviços (Desktop)
+![Sessão de Serviços Desktop](images/servicos.png)  
+*Visualização da seção de serviços em dispositivos desktop.*
+
+### Página de Serviços (Mobile)
+![Sessão de Serviços Mobile](images/servicosMobile.png)  
+*Visualização da seção de serviços em dispositivos móveis.*
+
+Caso as imagens não carreguem, certifique-se de que o diretório `images/` está na mesma pasta do arquivo README.md.
+
+
+
 ## Instruções de Uso
 
 ### Execução Local
