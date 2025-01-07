@@ -29,7 +29,9 @@
     <!-- Cabeçalho do site -->
     <header>
       <nav>
-        <ul>
+        <!-- Ícone de menu hambúrguer -->
+        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+        <ul id="navbar" class="navbar">
           <li><a href="index.html">Home</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="servicos.html">Serviços e Produtos</a></li>
@@ -61,33 +63,21 @@
         <div class="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="images/promo1.jpg"
-                alt="Promoção 1"
-                loading="lazy"
-              />
+              <img src="images/promo1.jpg" alt="Promoção 1" loading="lazy" />
               <div class="carousel-caption">
                 <h2>Promoção Especial</h2>
                 <p>Descontos exclusivos em novos smartphones!</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img
-                src="images/promo2.jpg"
-                alt="Promoção 2"
-                loading="lazy"
-              />
+              <img src="images/promo2.jpg" alt="Promoção 2" loading="lazy" />
               <div class="carousel-caption">
                 <h2>Manutenção de Notebooks e Smartphones</h2>
                 <p>Garantia de qualidade no reparo de seus dispositivos.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img
-                src="images/promo3.jpg"
-                alt="Promoção 3"
-                loading="lazy"
-              />
+              <img src="images/promo3.jpg" alt="Promoção 3" loading="lazy" />
               <div class="carousel-caption">
                 <h2>Venda de Acessórios</h2>
                 <p>Cabos, capas, carregadores e muito mais!</p>
@@ -205,7 +195,9 @@
           "Oferecemos soluções sob medida para suas necessidades em tecnologia.
           Fale com a gente!"
         </p>
-        <a href="contato.html" class="cta-text-button">Fale Conosco</a>
+        <a href="contato.html" class="cta-button cta-text-button"
+          >Fale Conosco</a
+        >
       </section>
 
       <!-- Nova seção: FAQ -->
@@ -245,6 +237,7 @@
 
     <!-- Scripts JS -->
     <script src="scripts.js"></script>
+    <script src="menu.js"></script>
     <script src="carousel.js"></script>
   </body>
 </html>

@@ -23,7 +23,9 @@
     <!-- Cabeçalho do site -->
     <header>
       <nav>
-        <ul>
+        <!-- Ícone de menu hambúrguer -->
+        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+        <ul id="navbar" class="navbar">
           <li><a href="index.html">Home</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="servicos.html">Serviços e Produtos</a></li>
@@ -31,6 +33,18 @@
         </ul>
       </nav>
     </header>
+
+    <section>
+      <div class="logoWrapper">
+        <img
+          src="images/logo.png"
+          alt="Logo da empresa"
+          loading="lazy"
+          class="logo"
+        />
+        <h1 class="title">Tech Store</h1>
+      </div>
+    </section>
 
     <!-- Seção principal -->
     <main>
@@ -93,5 +107,10 @@
       <p>&copy; 2025 Loja de Eletrônicos. Todos os direitos reservados.</p>
       <a href="#topo" id="voltar-topo">Voltar ao topo</a>
     </footer>
+
+    <!-- Scripts JS -->
+    <script src="scripts.js"></script>
+    <script src="menu.js"></script>
+    <script src="carousel.js"></script>
   </body>
 </html>

@@ -11,7 +11,9 @@
   <!-- Cabeçalho -->
   <header>
     <nav>
-      <ul>
+      <!-- Ícone de menu hambúrguer -->
+      <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+      <ul id="navbar" class="navbar">
         <li><a href="index.html">Home</a></li>
         <li><a href="sobre.html">Sobre</a></li>
         <li><a href="servicos.html">Serviços e Produtos</a></li>
@@ -20,9 +22,21 @@
     </nav>
   </header>
 
+  <section>
+    <div class="logoWrapper">
+      <img
+        src="images/logo.png"
+        alt="Logo da empresa"
+        loading="lazy"
+        class="logo"
+      />
+      <h1 class="title">Tech Store</h1>
+    </div>
+  </section>
+
   <!-- Seção Nossos Serviços -->
   <section id="topo" class="servicos">
-    <h1>Nossos Serviços</h1>
+    <h1 class="titleSize">Nossos Serviços</h1>
     <div class="cards">
       <div class="card">
         <h2>Assistência Técnica</h2>
@@ -41,7 +55,7 @@
 
   <!-- Seção Produtos Disponíveis -->
   <section class="produtos">
-    <h1>Produtos Disponíveis</h1>
+    <h1 class="titleSize">Produtos Disponíveis</h1>
     <div class="cards">
       <div class="card">
         <h2>Smartphones</h2>
@@ -60,7 +74,7 @@
 
   <!-- Seção Diferenciais -->
   <section class="diferenciais">
-    <h1>Nossos Diferenciais</h1>
+    <h1 class="titleSize">Nossos Diferenciais</h1>
     <ul>
       <li>Equipe altamente qualificada.</li>
       <li>Atendimento rápido e personalizado.</li>
@@ -73,5 +87,10 @@
     <p>&copy; 2025 Loja de Assistência Técnica. Todos os direitos reservados.</p>
     <a href="#topo" id="voltar-topo">Voltar ao topo</a>
   </footer>
+
+   <!-- Scripts JS -->
+   <script src="scripts.js"></script>
+   <script src="menu.js"></script>
+   <script src="carousel.js"></script>
 </body>
 </html>
