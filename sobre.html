@@ -3,117 +3,207 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Especialistas em assistência técnica de eletrônicos, venda de produtos de qualidade e suporte técnico confiável."
-    />
-    <meta
-      name="keywords"
-      content="assistência técnica, eletrônicos, suporte técnico, venda de produtos"
-    />
-    <title>Sobre - Loja de Eletrônicos</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <meta name="description" content="Conheça a TechFix — nossa história, missão, visão, valores e a equipe de técnicos especializados em assistência técnica de eletrônicos." />
+    <meta name="keywords" content="sobre, assistência técnica, TechFix, história, missão, visão, valores" />
+    <title>Sobre nós — TechFix Assistência Técnica</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="sobre.css" />
   </head>
   <body>
-    <!-- Cabeçalho do site -->
-    <header>
-      <nav>
-        <!-- Ícone de menu hambúrguer -->
-        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
-        <ul id="navbar" class="navbar">
-          <li><a href="index.html" class="menu-link">Home</a></li>
-          <li><a href="sobre.html" class="menu-link">Sobre</a></li>
-          <li>
-            <a href="servicos.html" class="menu-link">Serviços e Produtos</a>
-          </li>
-          <li><a href="contato.html" class="menu-link">Contato</a></li>
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Menu principal">
+        <a href="index.html" class="nav-logo" aria-label="TechFix — Página inicial">
+          <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+          Tech<span class="accent">Fix</span>
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="contato.html" class="nav-cta btn btn-primary btn-sm">Pedir Orçamento</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="sobre">
-      <div class="logoWrapper">
-        <img
-          src="images/logo.png"
-          alt="Logo da empresa"
-          loading="lazy"
-          class="logo"
-        />
-        <h1 class="title">Tech Store</h1>
-      </div>
-    </section>
+    <main id="main-content">
 
-    <!-- Seção principal -->
-    <main>
-      <!-- Seção Quem Somos -->
-      <section id="topo">
-        <h1>Sobre a Empresa</h1>
-      </section>
-      <section class="card">
-        <h2>Quem Somos</h2>
-        <p>
-          Somos especialistas em assistência técnica para eletrônicos,
-          oferecendo produtos de alta qualidade e suporte técnico confiável.
-          Nosso compromisso é garantir sua satisfação.
-        </p>
-      </section>
-
-      <!-- Seção Missão, Visão e Valores -->
-      <section class="card">
-        <h2>Missão, Visão e Valores</h2>
-        <div class="card-content">
-          <article>
-            <h3>Missão</h3>
-            <p>
-              Oferecer soluções completas em assistência técnica, produtos de
-              qualidade e suporte eficiente.
-            </p>
-          </article>
-          <article>
-            <h3>Visão</h3>
-            <p>
-              Ser referência em assistência técnica e suporte para eletrônicos
-              na região.
-            </p>
-          </article>
-          <article>
-            <h3>Valores</h3>
-            <ul>
-              <li>Confiança</li>
-              <li>Qualidade</li>
-              <li>Agilidade</li>
-              <li>Atendimento humanizado</li>
-            </ul>
-          </article>
+      <!-- PAGE HERO -->
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="section-container">
+          <span class="section-label"><i class="fas fa-users"></i> Nossa Empresa</span>
+          <h1 id="page-title" class="page-hero-title">Sobre a <span class="accent-text">TechFix</span></h1>
+          <p class="page-hero-subtitle">Mais de 10 anos transformando problemas em soluções para os seus eletrônicos.</p>
         </div>
       </section>
 
-      <!-- Seção Nossa História -->
-      <section class="card">
-        <h2>Nossa História</h2>
-        <p>
-          Desde 2010, trabalhamos com paixão para oferecer os melhores serviços
-          em assistência técnica e suporte. Nossa dedicação e excelência nos
-          tornaram uma referência.
-        </p>
+      <!-- QUEM SOMOS -->
+      <section class="about-section" aria-labelledby="about-title">
+        <div class="section-container about-grid">
+          <div class="about-text fade-up">
+            <span class="section-label"><i class="fas fa-building"></i> Quem Somos</span>
+            <h2 id="about-title" class="section-title">Especialistas em cuidar dos seus eletrônicos</h2>
+            <p>Somos uma equipe apaixonada por tecnologia e comprometida com a excelência no serviço de assistência técnica. Atendemos clientes residenciais e empresariais com o mesmo nível de dedicação e profissionalismo.</p>
+            <p>Nossa equipe é formada por técnicos certificados pelas principais fabricantes do mercado, garantindo que o seu equipamento seja tratado com o mais alto padrão de qualidade.</p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Anos de experiência</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">2.4k+</span>
+                <span class="stat-label">Clientes atendidos</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">De satisfação</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image fade-up fade-up-delay-2">
+            <img src="images/about_team.png" alt="Equipe TechFix" class="about-img" />
+          </div>
+        </div>
       </section>
+
+      <!-- MISSÃO VISÃO VALORES -->
+      <section class="mvv-section" aria-labelledby="mvv-title">
+        <div class="section-container">
+          <div class="section-header-center fade-up">
+            <h2 id="mvv-title" class="section-title">Missão, Visão e Valores</h2>
+          </div>
+          <div class="mvv-grid">
+            <article class="mvv-card mvv-missao fade-up">
+              <div class="mvv-icon"><i class="fas fa-bullseye"></i></div>
+              <h3>Missão</h3>
+              <p>Oferecer soluções completas em assistência técnica com produtos de qualidade, atendimento humanizado e suporte eficiente, garantindo a satisfação plena dos nossos clientes.</p>
+            </article>
+            <article class="mvv-card mvv-visao fade-up fade-up-delay-1">
+              <div class="mvv-icon"><i class="fas fa-eye"></i></div>
+              <h3>Visão</h3>
+              <p>Ser a referência em assistência técnica e suporte para eletrônicos na região, reconhecidos pela confiança, qualidade e inovação nos serviços prestados.</p>
+            </article>
+            <article class="mvv-card mvv-valores fade-up fade-up-delay-2">
+              <div class="mvv-icon"><i class="fas fa-heart"></i></div>
+              <h3>Valores</h3>
+              <ul class="values-list">
+                <li><i class="fas fa-check-circle"></i> Confiança e transparência</li>
+                <li><i class="fas fa-check-circle"></i> Qualidade comprovada</li>
+                <li><i class="fas fa-check-circle"></i> Agilidade no atendimento</li>
+                <li><i class="fas fa-check-circle"></i> Atendimento humanizado</li>
+                <li><i class="fas fa-check-circle"></i> Responsabilidade técnica</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOSSA HISTÓRIA — TIMELINE -->
+      <section class="timeline-section" aria-labelledby="timeline-title">
+        <div class="section-container">
+          <div class="section-header-center fade-up">
+            <span class="section-label"><i class="fas fa-clock-rotate-left"></i> Nossa Trajetória</span>
+            <h2 id="timeline-title" class="section-title">Nossa História</h2>
+            <p class="section-subtitle">Desde 2014 construindo uma reputação de excelência.</p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item fade-up">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2014</span>
+                <h3>Fundação</h3>
+                <p>A TechFix nasceu em uma pequena oficina com a missão de oferecer consertos de qualidade a preços justos.</p>
+              </div>
+            </article>
+            <article class="timeline-item fade-up fade-up-delay-1">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2017</span>
+                <h3>Expansão</h3>
+                <p>Inauguramos nosso novo espaço com laboratório completo e equipe especializada em múltiplas categorias de eletrônicos.</p>
+              </div>
+            </article>
+            <article class="timeline-item fade-up fade-up-delay-2">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2020</span>
+                <h3>Certificações</h3>
+                <p>Obtivemos certificações das principais fabricantes do mercado, garantindo ainda mais qualidade e confiança nos reparos.</p>
+              </div>
+            </article>
+            <article class="timeline-item fade-up fade-up-delay-3">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2024</span>
+                <h3>Hoje</h3>
+                <p>Mais de 2.400 clientes satisfeitos, equipe de 12 técnicos especializados e nota máxima nas avaliações online.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <!-- Rodapé -->
-    <footer>
-      <p>&copy; 2025 Loja de Eletrônicos. Todos os direitos reservados.</p>
-      <a href="#topo" id="voltar-topo">Voltar ao topo</a>
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+            Tech<span class="accent">Fix</span>
+          </a>
+          <p>Especialistas em realizar reparos em eletrônicos com qualidade e pontualidade no prazo.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="tel:+5511999990000"><i class="fas fa-phone contact-icon"></i>(11) 9999-0000</a></li>
+            <li><a href="https://wa.me/5511930009090" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp contact-icon"></i>(11) 9 3000-9090</a></li>
+            <li><a href="mailto:contato@techfix.com.br"><i class="fas fa-envelope contact-icon"></i>contato@techfix.com.br</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Horário</h4>
+          <div class="footer-hours">
+            <p><span>Seg – Sex</span><span>08:00 – 19:00</span></p>
+            <p><span>Sábado</span><span>09:00 – 14:00</span></p>
+            <p><span>Domingo</span><span>Fechado</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 TechFix Assistência Técnica. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <i class="fas fa-heart" style="color:#e74c3c"></i> por Carlos Uchôa</p>
+      </div>
     </footer>
 
-    <!-- Scripts JS -->
-    <script src="scripts.js"></script>
-    <script src="menu.js"></script>
-    <script src="carousel.js"></script>
-    <script src="links.js"></script>
+    <button id="scroll-top" aria-label="Voltar ao topo"><i class="fas fa-chevron-up"></i></button>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -3,244 +3,371 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Oferecemos soluções completas em eletrônicos, com vendas, suporte técnico especializado e acessórios de qualidade."
-    />
-    <meta
-      name="keywords"
-      content="empresa, tecnologia, soluções, sistemas, alta performance"
-    />
-    <title>Index - Empresa de Tecnologia</title>
-    <!-- Favicon (opcional) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-    <!-- Link para o Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-
-    <!-- Vinculação do CSS -->
+    <meta name="description" content="TechFix — Assistência técnica especializada em eletrônicos. Conserto rápido e profissional de smartphones, notebooks, TVs e muito mais." />
+    <meta name="keywords" content="assistência técnica, conserto de eletrônicos, reparo celular, notebook, TV, TechFix" />
+    <title>TechFix — Assistência Técnica Especializada</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
-
   <body>
-    <!-- Cabeçalho do site -->
-    <header>
-      <nav>
-        <!-- Ícone de menu hambúrguer -->
-        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
-        <ul id="navbar" class="navbar">
-          <li><a href="index.html" class="menu-link">Home</a></li>
-          <li><a href="sobre.html" class="menu-link">Sobre</a></li>
-          <li>
-            <a href="servicos.html" class="menu-link">Serviços e Produtos</a>
-          </li>
-          <li><a href="contato.html" class="menu-link">Contato</a></li>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Menu principal">
+        <a href="index.html" class="nav-logo" aria-label="TechFix — Página inicial">
+          <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+          Tech<span class="accent">Fix</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="contato.html" class="nav-cta btn btn-primary btn-sm">Pedir Orçamento</a></li>
         </ul>
       </nav>
     </header>
 
-    <main id="topo">
-      <!-- Nova seção: Titulo -->
-      <section id="home">
-        <div class="logoWrapper">
-          <img
-            src="images/logo.png"
-            alt="Logo da empresa"
-            loading="lazy"
-            class="logo"
-          />
-          <h1>Tech Store</h1>
-        </div>
-        <p>
-          "Oferecemos soluções completas em eletrônicos, com vendas, suporte
-          técnico especializado e acessórios de qualidade."
-        </p>
-      </section>
+    <main id="main-content">
 
-      <!-- Nova seção: Carousel -->
-      <section>
-        <div class="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/promo1.jpg" alt="Promoção 1" loading="lazy" />
-              <div class="carousel-caption">
-                <h2>Promoção Especial</h2>
-                <p>Descontos exclusivos em novos smartphones!</p>
-              </div>
+      <!-- ==================== HERO ==================== -->
+      <section class="hero-section" aria-label="Chamada principal">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="section-container hero-content">
+          <div class="hero-text">
+            <span class="section-label"><i class="fas fa-shield-halved"></i> Mais de 10 anos de experiência</span>
+            <h1 class="hero-title">
+              Conserto Rápido e<br>
+              <span class="hero-highlight">Profissional</span> para<br>
+              Seus Eletrônicos
+            </h1>
+            <p class="hero-subtitle">
+              Especialistas em revirar seus aparelhos com peças originais e atendimento ágil. Não deixe seu dia parar por um equipamento sem funcionar.
+            </p>
+            <div class="hero-actions">
+              <a href="contato.html" class="btn btn-primary btn-lg">
+                <i class="fas fa-calendar-check"></i> Agendar Visita
+              </a>
+              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+                <i class="fab fa-whatsapp"></i> Fale no WhatsApp
+              </a>
             </div>
-            <div class="carousel-item">
-              <img src="images/promo2.jpg" alt="Promoção 2" loading="lazy" />
-              <div class="carousel-caption">
-                <h2>Manutenção de Notebooks e Smartphones</h2>
-                <p>Garantia de qualidade no reparo de seus dispositivos.</p>
+            <div class="hero-social-proof">
+              <div class="hero-avatars" aria-hidden="true">
+                <span class="avatar av1">JC</span>
+                <span class="avatar av2">MO</span>
+                <span class="avatar av3">RF</span>
+                <span class="avatar av4">+</span>
               </div>
-            </div>
-            <div class="carousel-item">
-              <img src="images/promo3.jpg" alt="Promoção 3" loading="lazy" />
-              <div class="carousel-caption">
-                <h2>Venda de Acessórios</h2>
-                <p>Cabos, capas, carregadores e muito mais!</p>
+              <div>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <span class="hero-proof-text">+2.400 clientes satisfeitos</span>
               </div>
             </div>
           </div>
-          <button class="carousel-control prev" onclick="moveSlide(-1)">
-            &#10094;
-          </button>
-          <button class="carousel-control next" onclick="moveSlide(1)">
-            &#10095;
-          </button>
-        </div>
-      </section>
-
-      <!-- Nova seção: Vantagens -->
-      <section>
-        <h2>Vantagens de ser cliente</h2>
-        <ol class="vantagens">
-          <li>Atendimento <strong>rápido</strong></li>
-          <li>Preços <strong>especiais</strong></li>
-          <li>Suporte <strong>total</strong></li>
-        </ol>
-      </section>
-
-      <!-- Nova seção: Feedback Clientes -->
-      <section>
-        <h2>O que os clientes estão dizendo</h2>
-        <div class="comentarios-container">
-          <div class="card">
-            <blockquote>
-              <p>
-                <i
-                  >"Gostei demais do produto, o atendimento e com certeza irei
-                  voltar".</i
-                >
-              </p>
-              <footer>- João Silva</footer>
-            </blockquote>
-          </div>
-          <div class="card">
-            <blockquote>
-              <p>
-                <i
-                  >"A empresa oferece soluções incríveis. Sempre atenciosos e
-                  rápidos no suporte."</i
-                >
-              </p>
-              <footer>- Maria Oliveira</footer>
-            </blockquote>
-          </div>
-          <div class="card">
-            <blockquote>
-              <p>
-                <i
-                  >"Excelente qualidade no serviço! Fui atendido com muita
-                  atenção e respeito."</i
-                >
-              </p>
-              <footer>- Carlos Souza</footer>
-            </blockquote>
-          </div>
-          <div class="card">
-            <blockquote>
-              <p>
-                <i
-                  >"Produto de alta performance! Superou minhas expectativas,
-                  recomendo!"</i
-                >
-              </p>
-              <footer>- Ana Pereira</footer>
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      <!-- Nova seção: Produtos/Serviços -->
-      <section>
-        <h2>Nossos Produtos/Serviços</h2>
-        <div class="produtos">
-          <div class="produto">
-            <div class="produto-icon">
-              <i class="fas fa-wrench"></i>
-              <!-- Ícone para Concertos e Reparos -->
+          <div class="hero-image-wrap" aria-hidden="true">
+            <div class="hero-badge">
+              <i class="fas fa-certificate"></i>
+              <span>Técnicos Certificados</span>
             </div>
-            <p>Concertos e Reparos</p>
-            <!-- Categoria do produto -->
-            <p>Descrição do produto 1.</p>
-          </div>
-          <div class="produto">
-            <div class="produto-icon">
-              <i class="fas fa-tv"></i>
-              <!-- Ícone para Eletrônicos -->
-            </div>
-            <p>Eletrônicos</p>
-            <!-- Categoria do produto -->
-            <p>Descrição do produto 2.</p>
-          </div>
-          <div class="produto">
-            <div class="produto-icon">
-              <i class="fas fa-gift"></i>
-              <!-- Ícone para Acessórios -->
-            </div>
-            <p>Acessórios</p>
-            <!-- Categoria do produto -->
-            <p>Descrição do produto 3.</p>
+            <img src="images/hero_repair.png" alt="Técnico realizando conserto" class="hero-img" />
           </div>
         </div>
       </section>
 
-      <!-- Nova seção: Chamada para Ação -->
-      <section class="cta">
-        <h2>Entre em contato para mais informações</h2>
-        <p>
-          "Oferecemos soluções sob medida para suas necessidades em tecnologia.
-          Fale com a gente!"
-        </p>
-        <a href="contato.html" class="cta-button cta-text-button"
-          >Fale Conosco</a
-        >
-      </section>
+      <!-- ==================== SERVICES SCROLL ==================== -->
+      <section class="services-section" aria-labelledby="services-title">
+        <div class="section-container">
+          <div class="services-header">
+            <div>
+              <span class="section-label"><i class="fas fa-star"></i> Nossas Especialidades</span>
+              <h2 id="services-title" class="section-title">Reparamos tudo o que você precisa</h2>
+            </div>
+            <div class="services-arrows">
+              <button class="services-prev arrow-btn" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+              <button class="services-next arrow-btn" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
 
-      <!-- Nova seção: FAQ -->
-      <section>
-        <h2>Perguntas Frequentes</h2>
-        <div class="faq">
-          <div class="faq-item">
-            <h3>Como faço para entrar em contato?</h3>
-            <p>
-              Você pode entrar em contato através da nossa página de
-              <a href="contato.html">contato</a>.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3>Quais são as formas de pagamento?</h3>
-            <p>
-              Oferecemos diversas opções de pagamento, incluindo cartões de
-              crédito e boleto bancário.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3>Posso agendar uma demonstração do produto?</h3>
-            <p>
-              Sim, entre em contato conosco para agendar uma demonstração
-              personalizada.
-            </p>
+          <div class="services-scroll" role="list">
+            <article class="service-card fade-up" role="listitem">
+              <div class="service-icon"><i class="fas fa-tv"></i></div>
+              <h3>TVs e Monitores</h3>
+              <p>Reparo de TVs LED, OLED, QLED e monitores de alta resolução.</p>
+              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
+            </article>
+            <article class="service-card fade-up fade-up-delay-1" role="listitem">
+              <div class="service-icon"><i class="fas fa-blender"></i></div>
+              <h3>Micro-ondas</h3>
+              <p>Diagnóstico e conserto de micro-ondas de todas as marcas.</p>
+              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
+            </article>
+            <article class="service-card fade-up fade-up-delay-2" role="listitem">
+              <div class="service-icon"><i class="fas fa-mobile-screen"></i></div>
+              <h3>Celulares</h3>
+              <p>Troca de tela, bateria, conector e placa em smartphones Android e iPhone.</p>
+              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
+            </article>
+            <article class="service-card fade-up fade-up-delay-3" role="listitem">
+              <div class="service-icon"><i class="fas fa-soap"></i></div>
+              <h3>Máquinas de Lavar</h3>
+              <p>Reparo elétrico e mecânico em lavarroupas e lava-e-seca.</p>
+              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
+            </article>
+            <article class="service-card fade-up fade-up-delay-4" role="listitem">
+              <div class="service-icon"><i class="fas fa-laptop"></i></div>
+              <h3>Notebooks</h3>
+              <p>Manutenção, upgrade de memória e SSD, formatação e limpeza de notebooks.</p>
+              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
+            </article>
+            <article class="service-card fade-up fade-up-delay-5" role="listitem">
+              <div class="service-icon"><i class="fas fa-plug-circle-bolt"></i></div>
+              <h3>Outros Eletrônicos</h3>
+              <p>Videogames, câmeras, tablets, impressoras e muito mais.</p>
+              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
+            </article>
           </div>
         </div>
       </section>
+
+      <!-- ==================== WHY US ==================== -->
+      <section class="why-section" aria-labelledby="why-title">
+        <div class="section-container">
+          <div class="section-header-center fade-up">
+            <h2 id="why-title" class="section-title">Por que escolher a TechFix?</h2>
+            <p class="section-subtitle">Comprometemos a excelência dos seus equipamentos dia após dia. Por isso, oferecemos um serviço único e merecido.</p>
+          </div>
+          <div class="why-grid">
+            <article class="why-card fade-up">
+              <div class="icon-box"><i class="fas fa-bolt"></i></div>
+              <h3>Serviço Rápido</h3>
+              <p>Na maioria dos casos que chegam aqui qualquer um de nós trataria com muito menos prazo.</p>
+            </article>
+            <article class="why-card fade-up fade-up-delay-1">
+              <div class="icon-box"><i class="fas fa-user-shield"></i></div>
+              <h3>Técnicos Especialistas</h3>
+              <p>Equipe treinada em grandes principais marcas e principais tipos de equipamento do mercado.</p>
+            </article>
+            <article class="why-card fade-up fade-up-delay-2">
+              <div class="icon-box"><i class="fas fa-file-contract"></i></div>
+              <h3>Garantia Estendida</h3>
+              <p>Garantia de 90 dias para todos as peças e serviços realizados com nota fiscal fornecida.</p>
+            </article>
+            <article class="why-card fade-up fade-up-delay-3">
+              <div class="icon-box"><i class="fas fa-box-archive"></i></div>
+              <h3>Peças Originais</h3>
+              <p>Trabalhamos apenas com peças de origem comprovada para o reparo de qualidade da sua peça.</p>
+            </article>
+            <article class="why-card why-card-wide fade-up fade-up-delay-4">
+              <div class="icon-box"><i class="fas fa-tag"></i></div>
+              <h3>Orçamento Gratuito</h3>
+              <p>Avalie primeiro o valor! Traga o equipamento e realize orçamento sem custo adicional.</p>
+              <a href="contato.html" class="btn btn-outline btn-sm" style="margin-top: var(--space-4)">Fazer Agora →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PROCESS ==================== -->
+      <section class="process-section" aria-labelledby="process-title">
+        <div class="section-container">
+          <div class="section-header-center fade-up">
+            <span class="section-label"><i class="fas fa-route"></i> Como funciona</span>
+            <h2 id="process-title" class="section-title">Processo Simples e Transparente</h2>
+          </div>
+          <div class="process-steps">
+            <article class="process-step fade-up">
+              <div class="step-number">01</div>
+              <div class="icon-box"><i class="fas fa-phone"></i></div>
+              <h3>Contato</h3>
+              <p>Nos contate pelo telefone, e-mail ou WhatsApp. Agendamos a coleta ou verificamos se o equipamento pode ser trazido.</p>
+            </article>
+            <div class="process-arrow" aria-hidden="true"><i class="fas fa-long-arrow-alt-right"></i></div>
+            <article class="process-step fade-up fade-up-delay-1">
+              <div class="step-number">02</div>
+              <div class="icon-box"><i class="fas fa-magnifying-glass"></i></div>
+              <h3>Diagnóstico</h3>
+              <p>Analisamos detalhadamente o equipamento e informamos o valor do reparo antes de prosseguir.</p>
+            </article>
+            <div class="process-arrow" aria-hidden="true"><i class="fas fa-long-arrow-alt-right"></i></div>
+            <article class="process-step fade-up fade-up-delay-2">
+              <div class="step-number">03</div>
+              <div class="icon-box"><i class="fas fa-screwdriver-wrench"></i></div>
+              <h3>Reparo</h3>
+              <p>Após aprovação, iniciamos o conserto com peças originais e técnicos especializados.</p>
+            </article>
+            <div class="process-arrow" aria-hidden="true"><i class="fas fa-long-arrow-alt-right"></i></div>
+            <article class="process-step fade-up fade-up-delay-3">
+              <div class="step-number">04</div>
+              <div class="icon-box"><i class="fas fa-truck-fast"></i></div>
+              <h3>Entrega</h3>
+              <p>Devolvemos o aparelho funcionando com laudo técnico, nota fiscal e garantia de serviço.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TESTIMONIALS ==================== -->
+      <section class="testimonials-section" aria-labelledby="testimonials-title">
+        <div class="section-container">
+          <div class="section-header-center fade-up">
+            <h2 id="testimonials-title" class="section-title">O que dizem nossos clientes</h2>
+          </div>
+          <div class="testimonials-grid">
+            <article class="testimonial-card fade-up">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <blockquote>
+                <p>"Meu notebook voltou a funcionar rápido demais! Serviço excelente, técnico muito atencioso e o preço ficou ótimo. Recomendo muito!"</p>
+              </blockquote>
+              <footer class="testimonial-author">
+                <span class="author-avatar">CM</span>
+                <div>
+                  <cite>Carlos Moraes</cite>
+                  <span>Analista de Sistemas</span>
+                </div>
+              </footer>
+            </article>
+            <article class="testimonial-card fade-up fade-up-delay-1">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <blockquote>
+                <p>"Trouxe meu iPhone com a tela quebrada e ficou como novo. Atenderam super rápido. Qualidade do serviço foi impressionante."</p>
+              </blockquote>
+              <footer class="testimonial-author">
+                <span class="author-avatar">AS</span>
+                <div>
+                  <cite>Ana Souza</cite>
+                  <span>Gerente Comercial</span>
+                </div>
+              </footer>
+            </article>
+            <article class="testimonial-card fade-up fade-up-delay-2">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              </div>
+              <blockquote>
+                <p>"Fiquei surpreso com a qualidade do serviço de reparo da TV. Prazo cumprido, preço justo e nota fiscal entregue. Parabéns, TechFix!"</p>
+              </blockquote>
+              <footer class="testimonial-author">
+                <span class="author-avatar">RB</span>
+                <div>
+                  <cite>Roberto Silva</cite>
+                  <span>Engenheiro Civil</span>
+                </div>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CTA BANNER ==================== -->
+      <section class="cta-section" aria-labelledby="cta-title">
+        <div class="section-container">
+          <div class="cta-inner fade-up">
+            <span class="section-label" style="margin: 0 auto var(--space-4);"><i class="fas fa-headset"></i> Estamos online</span>
+            <h2 id="cta-title" class="section-title">Seu equipamento parou?</h2>
+            <p class="section-subtitle" style="margin: var(--space-4) auto var(--space-8);">
+              Não perca mais tempo! Entre em nosso chat agora e fale com seu aparelho em funcionamento novamente na qualidade que você merece.
+            </p>
+            <div class="cta-actions">
+              <a href="contato.html" class="btn btn-primary btn-lg">
+                <i class="fas fa-comment-dots"></i> Pedir Orçamento Agora
+              </a>
+              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Empresa de Tecnologia. Todos os direitos reservados.</p>
-      <a href="#topo" id="voltar-topo">Voltar ao topo</a>
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="TechFix">
+            <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+            Tech<span class="accent">Fix</span>
+          </a>
+          <p>Especialistas em revirar seus aparelhos para reparo de eletrônicos com qualidade e pontualidade no prazo.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="contato.html">Nosso Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li>
+              <a href="tel:+5500000000000">
+                <i class="fas fa-phone contact-icon"></i>
+                (11) 9999-0000 · (11) 8888-7766
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp contact-icon"></i>
+                (11) 9 3000-9090
+              </a>
+            </li>
+            <li>
+              <a href="mailto:contato@techfix.com.br">
+                <i class="fas fa-envelope contact-icon"></i>
+                contato@techfix.com.br
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Horário</h4>
+          <div class="footer-hours">
+            <p><span>Seg – Sex</span><span>08:00 – 19:00</span></p>
+            <p><span>Sábado</span><span>09:00 – 14:00</span></p>
+            <p><span>Domingo</span><span>Fechado</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 TechFix Assistência Técnica. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <i class="fas fa-heart" style="color:#e74c3c"></i> por Carlos Uchôa</p>
+      </div>
     </footer>
 
-    <!-- Scripts JS -->
-    <script src="scripts.js"></script>
-    <script src="menu.js"></script>
-    <script src="carousel.js"></script>
-    <script src="links.js"></script>
+    <!-- Scroll to top -->
+    <button id="scroll-top" aria-label="Voltar ao topo">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="main.js"></script>
   </body>
 </html>

@@ -1,122 +1,238 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Conheça nossos serviços de assistência técnica e os produtos de alta qualidade disponíveis na nossa loja."
-    />
-    <title>Serviços e Produtos</title>
+    <meta name="description" content="Serviços e produtos da TechFix — assistência técnica em celulares, notebooks, TVs, micro-ondas e muito mais. Veja nosso portfólio completo." />
+    <meta name="keywords" content="serviços assistência técnica, reparo celular, conserto notebook, manutenção TV, TechFix" />
+    <title>Serviços e Produtos — TechFix Assistência Técnica</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="servicos.css" />
   </head>
   <body>
-    <!-- Cabeçalho -->
-    <header>
-      <nav>
-        <!-- Ícone de menu hambúrguer -->
-        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
-        <ul id="navbar" class="navbar">
-          <li><a href="index.html" class="menu-link">Home</a></li>
-          <li><a href="sobre.html" class="menu-link">Sobre</a></li>
-          <li>
-            <a href="servicos.html" class="menu-link">Serviços e Produtos</a>
-          </li>
-          <li><a href="contato.html" class="menu-link">Contato</a></li>
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Menu principal">
+        <a href="index.html" class="nav-logo" aria-label="TechFix — Página inicial">
+          <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+          Tech<span class="accent">Fix</span>
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="contato.html" class="nav-cta btn btn-primary btn-sm">Pedir Orçamento</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="servicos">
-      <div class="logoWrapper">
-        <img
-          src="images/logo.png"
-          alt="Logo da empresa"
-          loading="lazy"
-          class="logo"
-        />
-        <h1 class="title">Tech Store</h1>
+    <main id="main-content">
+
+      <!-- PAGE HERO -->
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="section-container">
+          <span class="section-label"><i class="fas fa-screwdriver-wrench"></i> O que fazemos</span>
+          <h1 id="page-title" class="page-hero-title">Nossos <span class="accent-text">Serviços</span> e Produtos</h1>
+          <p class="page-hero-subtitle">Soluções completas para todos os seus eletrônicos com qualidade e garantia.</p>
+        </div>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section class="servicos-section" aria-labelledby="servicos-title">
+        <div class="section-container">
+          <div class="section-header-center fade-up">
+            <span class="section-label"><i class="fas fa-tools"></i> Assistência Técnica</span>
+            <h2 id="servicos-title" class="section-title">Nossos Serviços</h2>
+            <p class="section-subtitle">Diagnóstico, reparo e manutenção com peças originais e garantia estendida.</p>
+          </div>
+          <div class="svc-grid">
+            <article class="svc-card fade-up">
+              <div class="svc-icon"><i class="fas fa-mobile-screen"></i></div>
+              <h3>Assistência em Celulares</h3>
+              <ul class="svc-list">
+                <li><i class="fas fa-check"></i> Troca de tela e vidro</li>
+                <li><i class="fas fa-check"></i> Substituição de bateria</li>
+                <li><i class="fas fa-check"></i> Reparo de placa-mãe</li>
+                <li><i class="fas fa-check"></i> Conector de carga</li>
+                <li><i class="fas fa-check"></i> Câmera e alto-falante</li>
+              </ul>
+              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
+            </article>
+            <article class="svc-card fade-up fade-up-delay-1">
+              <div class="svc-icon"><i class="fas fa-laptop"></i></div>
+              <h3>Manutenção de Notebooks</h3>
+              <ul class="svc-list">
+                <li><i class="fas fa-check"></i> Formatação e instalação</li>
+                <li><i class="fas fa-check"></i> Upgrade de memória RAM</li>
+                <li><i class="fas fa-check"></i> Troca de HD por SSD</li>
+                <li><i class="fas fa-check"></i> Limpeza e manutenção</li>
+                <li><i class="fas fa-check"></i> Reparo de teclado e tela</li>
+              </ul>
+              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
+            </article>
+            <article class="svc-card fade-up fade-up-delay-2">
+              <div class="svc-icon"><i class="fas fa-tv"></i></div>
+              <h3>Reparo de TVs</h3>
+              <ul class="svc-list">
+                <li><i class="fas fa-check"></i> TVs LED, OLED e QLED</li>
+                <li><i class="fas fa-check"></i> Placa de alimentação</li>
+                <li><i class="fas fa-check"></i> Placa T-CON e lógica</li>
+                <li><i class="fas fa-check"></i> Reparo de imagem</li>
+                <li><i class="fas fa-check"></i> Smart TV e Android TV</li>
+              </ul>
+              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
+            </article>
+            <article class="svc-card fade-up fade-up-delay-3">
+              <div class="svc-icon"><i class="fas fa-blender"></i></div>
+              <h3>Eletrodomésticos</h3>
+              <ul class="svc-list">
+                <li><i class="fas fa-check"></i> Micro-ondas</li>
+                <li><i class="fas fa-check"></i> Máquinas de lavar</li>
+                <li><i class="fas fa-check"></i> Lava-louças</li>
+                <li><i class="fas fa-check"></i> Geladeiras e freezers</li>
+                <li><i class="fas fa-check"></i> Ar-condicionado</li>
+              </ul>
+              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
+            </article>
+            <article class="svc-card fade-up fade-up-delay-4">
+              <div class="svc-icon"><i class="fas fa-gamepad"></i></div>
+              <h3>Videogames & Tablets</h3>
+              <ul class="svc-list">
+                <li><i class="fas fa-check"></i> PS4, PS5, Xbox</li>
+                <li><i class="fas fa-check"></i> Nintendo Switch</li>
+                <li><i class="fas fa-check"></i> Tablets Android e iPad</li>
+                <li><i class="fas fa-check"></i> Troca de joystick</li>
+                <li><i class="fas fa-check"></i> Limpeza de consoles</li>
+              </ul>
+              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
+            </article>
+            <article class="svc-card fade-up fade-up-delay-5">
+              <div class="svc-icon"><i class="fas fa-desktop"></i></div>
+              <h3>Computadores Desktop</h3>
+              <ul class="svc-list">
+                <li><i class="fas fa-check"></i> Formatação e reinstalação</li>
+                <li><i class="fas fa-check"></i> Upgrade de hardware</li>
+                <li><i class="fas fa-check"></i> Remoção de vírus</li>
+                <li><i class="fas fa-check"></i> Suporte remoto</li>
+                <li><i class="fas fa-check"></i> Montagem de PC</li>
+              </ul>
+              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUTOS -->
+      <section class="produtos-section" aria-labelledby="produtos-title">
+        <div class="section-container">
+          <div class="section-header-center fade-up">
+            <span class="section-label"><i class="fas fa-store"></i> Loja</span>
+            <h2 id="produtos-title" class="section-title">Produtos Disponíveis</h2>
+            <p class="section-subtitle">Eletrônicos novos e seminovos com garantia e suporte técnico local.</p>
+          </div>
+          <div class="prod-grid">
+            <article class="prod-card fade-up">
+              <span class="prod-badge">Novo</span>
+              <div class="prod-icon"><i class="fas fa-mobile-screen"></i></div>
+              <h3>Smartphones</h3>
+              <p>Modelos atualizados das principais marcas com garantia de fábrica e suporte local.</p>
+              <a href="contato.html" class="btn btn-primary btn-sm">Consultar Estoque</a>
+            </article>
+            <article class="prod-card fade-up fade-up-delay-1">
+              <span class="prod-badge prod-badge-used">Seminovo</span>
+              <div class="prod-icon"><i class="fas fa-laptop"></i></div>
+              <h3>Notebooks</h3>
+              <p>Notebooks novos e seminovos com configuração avançada e suporte técnico.</p>
+              <a href="contato.html" class="btn btn-primary btn-sm">Consultar Estoque</a>
+            </article>
+            <article class="prod-card fade-up fade-up-delay-2">
+              <span class="prod-badge">Em estoque</span>
+              <div class="prod-icon"><i class="fas fa-headphones"></i></div>
+              <h3>Acessórios</h3>
+              <p>Carregadores, fones, capas, cabos e muito mais para todos os dispositivos.</p>
+              <a href="contato.html" class="btn btn-primary btn-sm">Ver Catálogo</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIFERENCIAIS -->
+      <section class="diff-section" aria-labelledby="diff-title">
+        <div class="section-container">
+          <div class="section-header-center fade-up">
+            <h2 id="diff-title" class="section-title">Nossos Diferenciais</h2>
+          </div>
+          <div class="diff-grid">
+            <div class="diff-item fade-up"><i class="fas fa-user-tie"></i><span>Equipe altamente qualificada</span></div>
+            <div class="diff-item fade-up fade-up-delay-1"><i class="fas fa-bolt"></i><span>Atendimento rápido e personalizado</span></div>
+            <div class="diff-item fade-up fade-up-delay-2"><i class="fas fa-medal"></i><span>Garantia em todos os serviços</span></div>
+            <div class="diff-item fade-up fade-up-delay-3"><i class="fas fa-tag"></i><span>Orçamento 100% gratuito</span></div>
+            <div class="diff-item fade-up fade-up-delay-4"><i class="fas fa-box-archive"></i><span>Peças originais e homologadas</span></div>
+            <div class="diff-item fade-up fade-up-delay-5"><i class="fas fa-truck-fast"></i><span>Coleta e entrega disponível</span></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+            Tech<span class="accent">Fix</span>
+          </a>
+          <p>Especialistas em realização de reparos em eletrônicos com qualidade e pontualidade no prazo.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="tel:+5511999990000"><i class="fas fa-phone contact-icon"></i>(11) 9999-0000</a></li>
+            <li><a href="https://wa.me/5511930009090" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp contact-icon"></i>(11) 9 3000-9090</a></li>
+            <li><a href="mailto:contato@techfix.com.br"><i class="fas fa-envelope contact-icon"></i>contato@techfix.com.br</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Horário</h4>
+          <div class="footer-hours">
+            <p><span>Seg – Sex</span><span>08:00 – 19:00</span></p>
+            <p><span>Sábado</span><span>09:00 – 14:00</span></p>
+            <p><span>Domingo</span><span>Fechado</span></p>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <!-- Seção Nossos Serviços -->
-    <section id="topo" class="servicos">
-      <h1 class="titleSize">Nossos Serviços</h1>
-      <div class="cards">
-        <div class="card">
-          <h2>Assistência Técnica</h2>
-          <p>
-            Conserto e manutenção de eletrônicos com garantia e qualidade
-            comprovada.
-          </p>
-        </div>
-        <div class="card">
-          <h2>Suporte Técnico</h2>
-          <p>
-            Atendimento especializado para resolver problemas técnicos e
-            configurações.
-          </p>
-        </div>
-        <div class="card">
-          <h2>Instalação</h2>
-          <p>
-            Serviço completo de instalação e configuração de equipamentos
-            eletrônicos.
-          </p>
-        </div>
+      <div class="footer-bottom">
+        <p>© 2025 TechFix Assistência Técnica. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <i class="fas fa-heart" style="color:#e74c3c"></i> por Carlos Uchôa</p>
       </div>
-    </section>
-
-    <!-- Seção Produtos Disponíveis -->
-    <section class="produtos">
-      <h1 class="titleSize">Produtos Disponíveis</h1>
-      <div class="cards">
-        <div class="card">
-          <h2>Smartphones</h2>
-          <p>
-            Modelos atualizados das principais marcas, com garantia e suporte
-            local.
-          </p>
-        </div>
-        <div class="card">
-          <h2>Acessórios</h2>
-          <p>
-            Carregadores, fones de ouvido, capas e muito mais para complementar
-            seus dispositivos.
-          </p>
-        </div>
-        <div class="card">
-          <h2>Notebooks</h2>
-          <p>
-            Venda de notebooks novos e seminovos com configuração avançada e
-            suporte técnico.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção Diferenciais -->
-    <section class="diferenciais">
-      <h1 class="titleSize">Nossos Diferenciais</h1>
-      <ul>
-        <li>Equipe altamente qualificada.</li>
-        <li>Atendimento rápido e personalizado.</li>
-        <li>Garantia de qualidade em todos os serviços e produtos.</li>
-      </ul>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-      <p>
-        &copy; 2025 Loja de Assistência Técnica. Todos os direitos reservados.
-      </p>
-      <a href="#topo" id="voltar-topo">Voltar ao topo</a>
     </footer>
 
-    <!-- Scripts JS -->
-    <script src="scripts.js"></script>
-    <script src="menu.js"></script>
-    <script src="carousel.js"></script>
-    <script src="links.js"></script>
+    <button id="scroll-top" aria-label="Voltar ao topo"><i class="fas fa-chevron-up"></i></button>
+    <script src="main.js"></script>
   </body>
 </html>

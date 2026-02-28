@@ -1,126 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Entre em contato conosco para suporte técnico, informações sobre nossos serviços e produtos."
-    />
-    <meta
-      name="keywords"
-      content="contato, assistência técnica, suporte técnico, serviços eletrônicos"
-    />
-    <title>Contato - Assistência Técnica</title>
+    <meta name="description" content="Entre em contato com a TechFix para solicitar orçamento, suporte técnico ou tirar dúvidas sobre nossos serviços de assistência técnica." />
+    <meta name="keywords" content="contato, orçamento, assistência técnica, TechFix, WhatsApp, suporte" />
+    <title>Contato — TechFix Assistência Técnica</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="contato.css" />
   </head>
   <body>
-    <!-- Cabeçalho -->
-    <header>
-      <nav>
-        <!-- Ícone de menu hambúrguer -->
-        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
-        <ul id="navbar" class="navbar">
-          <li><a href="index.html" class="menu-link">Home</a></li>
-          <li><a href="sobre.html" class="menu-link">Sobre</a></li>
-          <li>
-            <a href="servicos.html" class="menu-link">Serviços e Produtos</a>
-          </li>
-          <li><a href="contato.html" class="menu-link">Contato</a></li>
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Menu principal">
+        <a href="index.html" class="nav-logo" aria-label="TechFix — Página inicial">
+          <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+          Tech<span class="accent">Fix</span>
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="contato.html" class="nav-cta btn btn-primary btn-sm">Pedir Orçamento</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="contato">
-      <div class="logoWrapper">
-        <img
-          src="images/logo.png"
-          alt="Logo da empresa"
-          loading="lazy"
-          class="logo"
-        />
-        <h1 class="title">Tech Store</h1>
-      </div>
-    </section>
+    <main id="main-content">
 
-    <!-- Sessão de Contato -->
-    <main>
-      <section id="topo" class="contato">
-        <h1>Fale Conosco</h1>
-        <p>
-          Entre em contato para tirar dúvidas, solicitar suporte ou conhecer
-          nossos serviços.
-        </p>
-
-        <form action="#" method="post">
-          <label for="nome">Nome:</label>
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            placeholder="Seu nome completo"
-            required
-          />
-
-          <label for="email">E-mail:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Seu e-mail"
-            required
-          />
-
-          <label for="telefone">Telefone:</label>
-          <input
-            type="tel"
-            id="telefone"
-            name="telefone"
-            placeholder="(XX) XXXXX-XXXX"
-          />
-
-          <label for="mensagem">Mensagem:</label>
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            rows="5"
-            placeholder="Digite sua mensagem"
-            required
-          ></textarea>
-
-          <button type="submit">Enviar</button>
-        </form>
+      <!-- PAGE HERO -->
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="section-container">
+          <span class="section-label"><i class="fas fa-headset"></i> Fale Conosco</span>
+          <h1 id="page-title" class="page-hero-title">Entre em <span class="accent-text">Contato</span></h1>
+          <p class="page-hero-subtitle">Estamos prontos para atender você. Solicite seu orçamento sem compromisso!</p>
+        </div>
       </section>
 
-      <!-- Sessão de Localização -->
-      <section class="localizacao">
-        <h2>Nossa Localização</h2>
-        <p>
-          Visite nossa loja para assistência presencial ou suporte
-          especializado.
-        </p>
-        <iframe
-          title="Localização da nossa loja"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345097585!2d144.96305791531042!3d-37.81410797975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5777fca1d3cb6aa!2sFederation%20Square!5e0!3m2!1sen!2sbr!4v1617080248995!5m2!1sen!2sbr"
-          width="100%"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
+      <!-- CONTACT MAIN -->
+      <section class="contact-section" aria-labelledby="contact-form-title">
+        <div class="section-container">
+          <div class="contact-grid">
+
+            <!-- FORM -->
+            <div class="contact-form-wrap fade-up">
+              <h2 id="contact-form-title" class="form-title">Envie sua mensagem</h2>
+              <p class="form-subtitle">Preencha o formulário e retornaremos em até 24 horas.</p>
+
+              <form id="contact-form" action="#" method="post" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
+                    <span class="form-error">Por favor, informe seu nome.</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" />
+                    <span class="form-error">Informe um e-mail válido.</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="telefone">WhatsApp / Telefone</label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(XX) 9 XXXX-XXXX" autocomplete="tel" />
+                </div>
+                <div class="form-group">
+                  <label for="equipamento">Qual equipamento você precisa reparar?</label>
+                  <select id="equipamento" name="equipamento">
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option>Celular / Smartphone</option>
+                    <option>Notebook / Laptop</option>
+                    <option>TV / Monitor</option>
+                    <option>Micro-ondas / Eletrodoméstico</option>
+                    <option>Videogame / Tablet</option>
+                    <option>Computador Desktop</option>
+                    <option>Outro</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="mensagem">Descreva o problema *</label>
+                  <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva o problema do seu equipamento..." required></textarea>
+                  <span class="form-error">Por favor, descreva o problema.</span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg contact-submit">
+                  <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                </button>
+              </form>
+            </div>
+
+            <!-- INFO -->
+            <aside class="contact-info fade-up fade-up-delay-2">
+              <div class="info-card">
+                <h3>Informações de Contato</h3>
+
+                <ul class="info-list">
+                  <li>
+                    <div class="info-icon"><i class="fas fa-phone"></i></div>
+                    <div>
+                      <strong>Telefone</strong>
+                      <a href="tel:+5511999990000">(11) 9999-0000</a>
+                      <a href="tel:+5511888877660">(11) 8888-7766</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-icon info-icon-green"><i class="fab fa-whatsapp"></i></div>
+                    <div>
+                      <strong>WhatsApp</strong>
+                      <a href="https://wa.me/5511930009090" target="_blank" rel="noopener noreferrer">(11) 9 3000-9090</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                      <strong>E-mail</strong>
+                      <a href="mailto:contato@techfix.com.br">contato@techfix.com.br</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+                    <div>
+                      <strong>Endereço</strong>
+                      <span>Rua das Tecnologias, 1024<br>São Paulo – SP, 01310-100</span>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="info-hours">
+                  <h4><i class="fas fa-clock"></i> Horário de Atendimento</h4>
+                  <div class="hours-row"><span>Segunda a Sexta</span><span>08:00 – 19:00</span></div>
+                  <div class="hours-row"><span>Sábado</span><span>09:00 – 14:00</span></div>
+                  <div class="hours-row closed"><span>Domingo</span><span>Fechado</span></div>
+                </div>
+
+                <div class="info-socials">
+                  <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                  <a href="https://wa.me/5511930009090" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
       </section>
+
+      <!-- MAP -->
+      <section class="map-section" aria-label="Localização da loja">
+        <div class="section-container">
+          <div class="section-header-center fade-up">
+            <h2 class="section-title">Nossa Localização</h2>
+            <p class="section-subtitle">Venha nos visitar ou solicite coleta e entrega do seu equipamento.</p>
+          </div>
+        </div>
+        <div class="map-wrapper fade-up">
+          <iframe
+            title="Localização da TechFix"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098!2d-46.654!3d-23.564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzUwLjQiUyA0NsKwMzknMTQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="380"
+            style="border:0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
     </main>
 
-    <!-- Rodapé -->
-    <footer>
-      <p>&copy; 2025 Assistência Técnica. Todos os direitos reservados.</p>
-      <a href="#topo" id="voltar-topo">Voltar ao topo</a>
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+            Tech<span class="accent">Fix</span>
+          </a>
+          <p>Especialistas em realização de reparos em eletrônicos com qualidade e pontualidade no prazo.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="tel:+5511999990000"><i class="fas fa-phone contact-icon"></i>(11) 9999-0000</a></li>
+            <li><a href="https://wa.me/5511930009090" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp contact-icon"></i>(11) 9 3000-9090</a></li>
+            <li><a href="mailto:contato@techfix.com.br"><i class="fas fa-envelope contact-icon"></i>contato@techfix.com.br</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Horário</h4>
+          <div class="footer-hours">
+            <p><span>Seg – Sex</span><span>08:00 – 19:00</span></p>
+            <p><span>Sábado</span><span>09:00 – 14:00</span></p>
+            <p><span>Domingo</span><span>Fechado</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 TechFix Assistência Técnica. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <i class="fas fa-heart" style="color:#e74c3c"></i> por Carlos Uchôa</p>
+      </div>
     </footer>
 
-    <!-- Scripts JS -->
-    <script src="scripts.js"></script>
-    <script src="menu.js"></script>
-    <script src="carousel.js"></script>
-    <script src="links.js"></script>
+    <button id="scroll-top" aria-label="Voltar ao topo"><i class="fas fa-chevron-up"></i></button>
+    <script src="main.js"></script>
   </body>
 </html>
