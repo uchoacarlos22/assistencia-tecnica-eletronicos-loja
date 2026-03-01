@@ -442,7 +442,7 @@ function initAnimations() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
 
   const animTargets = document.querySelectorAll('.fade-up, .fade-down, .fade-left, .fade-right, .zoom-in');
   animTargets.forEach(el => observer.observe(el));
