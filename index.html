@@ -89,94 +89,121 @@
         </div>
       </section>
 
-      <!-- ==================== SERVICES SCROLL ==================== -->
-      <section class="services-section" aria-labelledby="services-title">
-        <div class="section-container">
-          <div class="services-header">
-            <div>
-              <span class="section-label"><i class="fas fa-star"></i> Nossas Especialidades</span>
-              <h2 id="services-title" class="section-title">Reparamos tudo o que você precisa</h2>
+      <!-- ==================== FOCUS RAIL CAROUSEL ==================== -->
+      <section class="focus-rail-section" aria-labelledby="fr-title">
+        <!-- Background ambience (blurred active image) -->
+        <div class="fr-ambience" id="fr-ambience" aria-hidden="true">
+          <div class="fr-ambience-img" id="fr-ambience-img"></div>
+          <div class="fr-ambience-overlay"></div>
+        </div>
+
+        <div class="section-container fr-header fade-up">
+          <span class="section-label"><i class="fas fa-star"></i> Nossas Especialidades</span>
+          <h2 id="fr-title" class="section-title">Reparamos tudo o que você precisa</h2>
+        </div>
+
+        <!-- Main Layout (Side by Side) -->
+        <div class="section-container fr-layout">
+          <!-- Info panel + controls (Left side) -->
+          <div class="fr-panel fade-up">
+            <div class="fr-info" id="fr-info" aria-live="polite">
+              <span class="fr-meta" id="fr-meta"></span>
+              <h3 class="fr-title-text" id="fr-item-title"></h3>
+              <p class="fr-desc" id="fr-desc"></p>
             </div>
-            <div class="services-arrows">
-              <button class="services-prev arrow-btn" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
-              <button class="services-next arrow-btn" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
+            <div class="fr-controls">
+              <div class="fr-nav">
+                <button class="fr-btn" id="fr-prev" aria-label="Serviço anterior">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <span class="fr-counter" id="fr-counter">1 / 6</span>
+                <button class="fr-btn" id="fr-next" aria-label="Próximo serviço">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+              <a class="fr-cta btn btn-primary" id="fr-cta" href="contato.html">
+                Solicitar Orçamento <i class="fas fa-arrow-up-right-from-square" style="font-size:0.75em"></i>
+              </a>
             </div>
           </div>
 
-          <div class="services-scroll" role="list">
-            <article class="service-card fade-up" role="listitem">
-              <div class="service-icon"><i class="fas fa-tv"></i></div>
-              <h3>TVs e Monitores</h3>
-              <p>Reparo de TVs LED, OLED, QLED e monitores de alta resolução.</p>
-              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
-            </article>
-            <article class="service-card fade-up fade-up-delay-1" role="listitem">
-              <div class="service-icon"><i class="fas fa-blender"></i></div>
-              <h3>Micro-ondas</h3>
-              <p>Diagnóstico e conserto de micro-ondas de todas as marcas.</p>
-              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
-            </article>
-            <article class="service-card fade-up fade-up-delay-2" role="listitem">
-              <div class="service-icon"><i class="fas fa-mobile-screen"></i></div>
-              <h3>Celulares</h3>
-              <p>Troca de tela, bateria, conector e placa em smartphones Android e iPhone.</p>
-              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
-            </article>
-            <article class="service-card fade-up fade-up-delay-3" role="listitem">
-              <div class="service-icon"><i class="fas fa-soap"></i></div>
-              <h3>Máquinas de Lavar</h3>
-              <p>Reparo elétrico e mecânico em lavarroupas e lava-e-seca.</p>
-              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
-            </article>
-            <article class="service-card fade-up fade-up-delay-4" role="listitem">
-              <div class="service-icon"><i class="fas fa-laptop"></i></div>
-              <h3>Notebooks</h3>
-              <p>Manutenção, upgrade de memória e SSD, formatação e limpeza de notebooks.</p>
-              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
-            </article>
-            <article class="service-card fade-up fade-up-delay-5" role="listitem">
-              <div class="service-icon"><i class="fas fa-plug-circle-bolt"></i></div>
-              <h3>Outros Eletrônicos</h3>
-              <p>Videogames, câmeras, tablets, impressoras e muito mais.</p>
-              <a href="contato.html" class="btn btn-outline btn-sm">Solicitar Orçamento</a>
-            </article>
+          <!-- 3D Stage (Right side) -->
+          <div class="fr-stage">
+            <div class="fr-stage"
+                 id="fr-stage"
+                 tabindex="0"
+                 aria-label="Carrossel de serviços. Use as setas do teclado para navegar."
+                 role="region">
+              <!-- cards rendered by JS -->
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- ==================== WHY US ==================== -->
+      <!-- ==================== WHY US (BENTO GRID) ==================== -->
       <section class="why-section" aria-labelledby="why-title">
         <div class="section-container">
           <div class="section-header-center fade-up">
+            <span class="section-label"><i class="fas fa-shield-halved"></i> Nossos Diferenciais</span>
             <h2 id="why-title" class="section-title">Por que escolher a TechFix?</h2>
             <p class="section-subtitle">Comprometemos a excelência dos seus equipamentos dia após dia. Por isso, oferecemos um serviço único e merecido.</p>
           </div>
-          <div class="why-grid">
-            <article class="why-card fade-up">
-              <div class="icon-box"><i class="fas fa-bolt"></i></div>
-              <h3>Serviço Rápido</h3>
-              <p>Na maioria dos casos que chegam aqui qualquer um de nós trataria com muito menos prazo.</p>
+          
+          <div class="why-bento-grid">
+            <!-- Card 1: Rápido (Largo) -->
+            <article class="why-bento-card span-col-2 fade-up">
+              <div class="bento-bg-gradient" style="background: radial-gradient(circle at 100% 0%, rgba(245, 158, 11, 0.15) 0%, transparent 50%);"></div>
+              <div class="icon-box"><i class="fas fa-bolt" style="color: #f59e0b;"></i></div>
+              <div class="bento-content">
+                <h3>Serviço Rápido (< 24h)</h3>
+                <p>Na maioria dos casos que chegam aqui, qualquer um de nós trataria com muito menos prazo. Nosso objetivo é devolver seu equipamento funcionando em tempo recorde.</p>
+              </div>
+              <i class="fas fa-bolt bento-icon-bg" aria-hidden="true"></i>
             </article>
-            <article class="why-card fade-up fade-up-delay-1">
-              <div class="icon-box"><i class="fas fa-user-shield"></i></div>
-              <h3>Técnicos Especialistas</h3>
-              <p>Equipe treinada em grandes principais marcas e principais tipos de equipamento do mercado.</p>
+
+            <!-- Card 2: Especialistas (Normal) -->
+            <article class="why-bento-card fade-up fade-up-delay-1">
+              <div class="bento-bg-gradient" style="background: radial-gradient(circle at 100% 0%, rgba(59, 130, 246, 0.15) 0%, transparent 50%);"></div>
+              <div class="icon-box"><i class="fas fa-user-shield" style="color: #3b82f6;"></i></div>
+              <div class="bento-content">
+                <h3>Técnicos Especialistas</h3>
+                <p>Equipe treinada em laboratórios das principais marcas do mercado.</p>
+              </div>
+              <i class="fas fa-user-shield bento-icon-bg" aria-hidden="true"></i>
             </article>
-            <article class="why-card fade-up fade-up-delay-2">
-              <div class="icon-box"><i class="fas fa-file-contract"></i></div>
-              <h3>Garantia Estendida</h3>
-              <p>Garantia de 90 dias para todos as peças e serviços realizados com nota fiscal fornecida.</p>
+
+            <!-- Card 3: Garantia (Alto) -->
+            <article class="why-bento-card span-row-2 fade-up fade-up-delay-2">
+              <div class="bento-bg-gradient" style="background: radial-gradient(circle at 50% 100%, rgba(16, 185, 129, 0.15) 0%, transparent 60%);"></div>
+              <div class="icon-box"><i class="fas fa-file-contract" style="color: #10b981;"></i></div>
+              <div class="bento-content">
+                <h3>Garantia Estendida</h3>
+                <p>Garantia real de 90 dias para todas as peças e serviços realizados. Emitimos nota fiscal e certificado de garantia para sua total segurança e tranquilidade pós-reparo.</p>
+              </div>
+              <i class="fas fa-shield-check bento-icon-bg" aria-hidden="true"></i>
             </article>
-            <article class="why-card fade-up fade-up-delay-3">
-              <div class="icon-box"><i class="fas fa-box-archive"></i></div>
-              <h3>Peças Originais</h3>
-              <p>Trabalhamos apenas com peças de origem comprovada para o reparo de qualidade da sua peça.</p>
+
+            <!-- Card 4: Peças Originais (Normal) -->
+            <article class="why-bento-card fade-up fade-up-delay-3">
+              <div class="bento-bg-gradient" style="background: radial-gradient(circle at 100% 0%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);"></div>
+              <div class="icon-box"><i class="fas fa-box-archive" style="color: #8b5cf6;"></i></div>
+              <div class="bento-content">
+                <h3>Peças Originais</h3>
+                <p>Trabalhamos apenas com componentes de origem comprovada e certificados.</p>
+              </div>
+              <i class="fas fa-microchip bento-icon-bg" aria-hidden="true"></i>
             </article>
-            <article class="why-card why-card-wide fade-up fade-up-delay-4">
-              <div class="icon-box"><i class="fas fa-tag"></i></div>
-              <h3>Orçamento Gratuito</h3>
-              <p>Avalie primeiro o valor! Traga o equipamento e realize orçamento sem custo adicional.</p>
-              <a href="contato.html" class="btn btn-outline btn-sm" style="margin-top: var(--space-4)">Fazer Agora →</a>
+
+            <!-- Card 5: Orçamento (Largo) -->
+            <article class="why-bento-card span-col-2 align-center fade-up fade-up-delay-4">
+              <div class="bento-bg-gradient" style="background: radial-gradient(circle at 0% 100%, rgba(236, 72, 153, 0.15) 0%, transparent 60%);"></div>
+              <div class="icon-box"><i class="fas fa-hand-holding-dollar" style="color: #ec4899;"></i></div>
+              <div class="bento-content">
+                <h3>Orçamento Gratuito e Transparente</h3>
+                <p>Não pague no escuro. Traga o equipamento e realize orçamento completo sem custo adicional e sem compromisso.</p>
+                <a href="contato.html" class="btn btn-primary" style="margin-top: var(--space-4)">Fazer Orçamento Agora <i class="fas fa-arrow-right"></i></a>
+              </div>
+              <i class="fas fa-tags bento-icon-bg" aria-hidden="true"></i>
             </article>
           </div>
         </div>
